@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Ademen : MonoBehaviour {
+	public bool ademin;
+
 
 	// Use this for initialization
 	void Start () {
@@ -11,6 +13,10 @@ public class Ademen : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		
+		if (Input.GetMouseButtonDown (0)) {
+			ademin = true;
+		} else {
+			ademin = false;
+		}
 	}
 }
