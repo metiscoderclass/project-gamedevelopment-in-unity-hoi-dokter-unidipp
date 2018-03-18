@@ -28,4 +28,8 @@ public class ademscript : MonoBehaviour {
 			nietgeademgetal -= 1;
 		}
 	}
+
+	public void ademinstate(bool adembool2) {
+		ademinbool_player = adembool2;		
+	}
 }

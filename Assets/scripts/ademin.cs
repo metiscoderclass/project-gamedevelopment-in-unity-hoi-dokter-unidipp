@@ -13,9 +13,16 @@ public class ademin : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if (Input.GetMouseButtonDown (0)) {
-			ademinbool = true;
+			Debug.Log ("click");
 		} else {
 			ademinbool = false;
+		}
+	}
+
+	void OnMouseEnter(){
+		if (Input.GetMouseButtonDown (0)) {
+			ademinbool = true;
+			Debug.Log ("ademinbool:" + ademinbool);
 		}
 	}
 }

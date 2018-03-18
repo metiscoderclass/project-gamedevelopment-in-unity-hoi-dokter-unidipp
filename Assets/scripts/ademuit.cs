@@ -12,9 +12,9 @@ public class ademuit : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
-		if (Input.GetMouseButtonDown (0)) {
+		if (Input.GetMouseButton (0)) {
 			ademuitbool = true;
-			Debug.Log ("ademuitbool:" + ademuitbool);
+			//Debug.Log ("ademuitbool:" + ademuitbool);
 		} else {
 			ademuitbool = false;
 			//Debug.Log ("ademuitbool:" + ademuitbool);

@@ -53,3 +53,6 @@ TagManager:
   - name: UI
     uniqueID: 1417146375
     locked: 0
+  - name: UI2
+    uniqueID: 1506551247
+    locked: 0
