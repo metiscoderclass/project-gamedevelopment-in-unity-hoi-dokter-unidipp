@@ -2,21 +2,22 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Ademen : MonoBehaviour {
-	public bool ademin;
-
+public class ademuit : MonoBehaviour {
+	public bool ademuitbool;
 
 	// Use this for initialization
 	void Start () {
-		
+
 	}
-	
+
 	// Update is called once per frame
 	void Update () {
 		if (Input.GetMouseButtonDown (0)) {
-			ademin = true;
+			ademuitbool = true;
+			Debug.Log ("ademuitbool:" + ademuitbool);
 		} else {
-			ademin = false;
+			ademuitbool = false;
+			//Debug.Log ("ademuitbool:" + ademuitbool);
 		}
 	}
 }
