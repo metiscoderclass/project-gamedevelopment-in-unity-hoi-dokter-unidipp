@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.Playables;
 
 public class ademscript : MonoBehaviour {
 	public bool ademinbool_player;
@@ -35,9 +36,11 @@ public class ademscript : MonoBehaviour {
 		}
 
 		if (ademinbool_player == true) {
+			animation.Play ("Ademin");
 			ademgetal += 1; 
 			nietgeademgetal = 100;
 		} else if (ademuitbool_player == true) {
+			animation.Play ("Ademuit");
 			ademgetal -= 1; 
 			nietgeademgetal = 100;
 		} else {
