@@ -13,8 +13,12 @@ public class ademscript : MonoBehaviour {
 	public Text ademgetaltext;
 	public Text nietademgetaltext;
 
+	public Animation animation;
+
 	// Use this for initialization
 	void Start () {
+
+		// animation = GetComponent<Animation> ();
 		
 	}
 	
@@ -36,11 +40,11 @@ public class ademscript : MonoBehaviour {
 		}
 
 		if (ademinbool_player == true) {
-			animation.Play ("Ademin");
+			animation.Play ("Ademin", PlayMode.StopAll);
 			ademgetal += 1; 
 			nietgeademgetal = 100;
 		} else if (ademuitbool_player == true) {
-			animation.Play ("Ademuit");
+			animation.Play ("Ademuit", PlayMode.StopAll);
 			ademgetal -= 1; 
 			nietgeademgetal = 100;
 		} else {
