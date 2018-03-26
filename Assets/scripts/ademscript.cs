@@ -1,12 +1,16 @@
-﻿	using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ademscript : MonoBehaviour {
 	public bool ademinbool_player;
 	public bool ademuitbool_player;
 	public int ademgetal = 100;
 	public int nietgeademgetal = 100;
+
+	public Text ademgetaltext;
+	public Text nietademgetaltext;
 
 	// Use this for initialization
 	void Start () {
@@ -40,7 +44,8 @@ public class ademscript : MonoBehaviour {
 			nietgeademgetal -= 1;
 		}
 
-		Debug.Log (ademgetal + " " + nietgeademgetal);
+		ademgetaltext.text = ademgetal.ToString();
+		nietademgetaltext.text = nietgeademgetal.ToString();
 	}
 
 	public void ademinstate(bool adembool2) {
