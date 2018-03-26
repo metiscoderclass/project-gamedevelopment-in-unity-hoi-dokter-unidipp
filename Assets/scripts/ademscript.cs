@@ -18,6 +18,8 @@ public class ademscript : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 
+		Animator animator;
+
 		// animation = GetComponent<Animation> ();
 		
 	}
