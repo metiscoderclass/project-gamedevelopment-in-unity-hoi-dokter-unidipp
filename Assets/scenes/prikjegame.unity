@@ -124,6 +124,7 @@ GameObject:
   - component: {fileID: 258629771}
   - component: {fileID: 258629773}
   - component: {fileID: 258629774}
+  - component: {fileID: 258629775}
   m_Layer: 0
   m_Name: Lichaam-zittend
   m_TagString: Untagged
@@ -222,7 +223,21 @@ MonoBehaviour:
   nietgeademgetal: 100
   ademgetaltext: {fileID: 918738843}
   nietademgetaltext: {fileID: 1014066046}
-  animation: {fileID: 0}
+  animation: {fileID: 258629775}
+--- !u!111 &258629775
+Animation:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 258629770}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: 02e0f92c4c4d240f6bff8142de612002, type: 2}
+  m_Animations: []
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!1 &275183075
 GameObject:
   m_ObjectHideFlags: 0

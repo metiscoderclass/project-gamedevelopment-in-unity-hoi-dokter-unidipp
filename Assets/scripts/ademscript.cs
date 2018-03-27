@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using UnityEngine.Playables;
 
 public class ademscript : MonoBehaviour {
 	public bool ademinbool_player;
@@ -13,7 +12,8 @@ public class ademscript : MonoBehaviour {
 	public Text ademgetaltext;
 	public Text nietademgetaltext;
 
-	public Animation animation;
+	public Animation ademinanim;
+	public Animation ademuitanim;
 
 	// Use this for initialization
 	void Start () {
