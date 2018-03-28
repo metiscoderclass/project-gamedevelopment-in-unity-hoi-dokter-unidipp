@@ -9,16 +9,22 @@ public class ademscript : MonoBehaviour {
 	public int ademgetal = 100;
 	public int nietgeademgetal = 100;
 
+	bool eersteadem = false;
+	int tijdsindseersteadem;
+
 	public Text ademgetaltext;
 	public Text nietademgetaltext;
 
-	public Animation ademinanim;
-	public Animation ademuitanim;
+	Animator animator;
+
+	//public Animation ademinanim;
+	//public Animation ademuitanim;
 
 	// Use this for initialization
 	void Start () {
 
-		Animator animator;
+		animator = GetComponent<Animator>();
+
 
 		// animation = GetComponent<Animation> ();
 		
@@ -26,14 +32,17 @@ public class ademscript : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		//ademinbool_player = GameObject.Find ("adem in").GetComponent<ademin> ().ademinbool;
-		//ademuitbool_player = GameObject.Find ("adem uit").GetComponent<ademuit> ().ademuitbool;
-	
+		tijdsindseersteadem++;
+
+
+
 		if (Input.GetKey (KeyCode.A)) {
 			ademinbool_player = true;
 		} else {
 			ademinbool_player = false;
 		}
+
+
 
 		if (Input.GetKey (KeyCode.D)) {
 			ademuitbool_player = true;
@@ -41,21 +50,35 @@ public class ademscript : MonoBehaviour {
 			ademuitbool_player = false;
 		}
 
+
+
 		if (ademinbool_player == true) {
-			animation.Play ("Ademin", PlayMode.StopAll);
+			if (eersteadem = false) {
+				eersteadem = true;
+			}
+
+			//animation.Play ("Ademin", PlayMode.StopAll);
+			animator.SetBool("ademIn", true);
+
 			ademgetal += 1; 
 			nietgeademgetal = 100;
 		} else if (ademuitbool_player == true) {
-			animation.Play ("Ademuit", PlayMode.StopAll);
+			//animation.Play ("Ademuit", PlayMode.StopAll);
+			animator.SetBool("ademUit", true);
+
 			ademgetal -= 1; 
 			nietgeademgetal = 100;
 		} else {
 			nietgeademgetal -= 1;
 		}
 
+
+
 		ademgetaltext.text = ademgetal.ToString();
 		nietademgetaltext.text = nietgeademgetal.ToString();
 	}
+
+
 
 	public void ademinstate(bool adembool2) {
 		ademinbool_player = adembool2;		
