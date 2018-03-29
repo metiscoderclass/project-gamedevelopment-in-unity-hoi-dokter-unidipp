@@ -222,6 +222,7 @@ MonoBehaviour:
   nietgeademgetal: 100
   ademgetaltext: {fileID: 918738843}
   nietademgetaltext: {fileID: 1014066046}
+  prefab: {fileID: 4996051133577212, guid: 3839f90e2cfb546129b6567bc6ec1abb, type: 2}
 --- !u!1 &275183075
 GameObject:
   m_ObjectHideFlags: 0
@@ -808,7 +809,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -35.90268, y: -15.915787}
+  m_AnchoredPosition: {x: -35.90268, y: -15.9157715}
   m_SizeDelta: {x: 70.8, y: 32.8}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &918738843
