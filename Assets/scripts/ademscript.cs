@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class ademscript : MonoBehaviour {
 	public bool ademinbool_player;
@@ -18,6 +19,7 @@ public class ademscript : MonoBehaviour {
 	public GameObject UI;
 
 	public Transform prefab;
+	public Transform prefab2;
 
 	Animator animator;
 
@@ -45,6 +47,14 @@ public class ademscript : MonoBehaviour {
 			if (nietgeademgetal < 0 && tijdsindseersteadem > 1) {
 				Transform nietgeademdmessage = Instantiate (prefab, new Vector3 (0, 3, 0), Quaternion.identity);
 				nietgeademdmessage.transform.parent = UI.transform;
+			}
+		}
+
+		if (GameObject.Find ("afmessage(Clone)") == null) {
+			if (nietgeademgetal == -300 && tijdsindseersteadem > 1) {
+				Destroy (GameObject.FindGameObjectWithTag("message"));
+				Transform afgeademdmessage = Instantiate (prefab2, new Vector3 (0, 3, 0), Quaternion.identity);
+				afgeademdmessage.transform.parent = UI.transform;
 			}
 		}
 
@@ -96,7 +106,11 @@ public class ademscript : MonoBehaviour {
 
 
 
-	public void ademinstate(bool adembool2) {
-		ademinbool_player = adembool2;		
+	//public void ademinstate(bool adembool2) {
+	//	ademinbool_player = adembool2;		
+	//}
+
+	public void reloadscene () {
+		SceneManager.LoadScene("scenes/prikjegame");
 	}
 }

@@ -224,6 +224,7 @@ MonoBehaviour:
   nietademgetaltext: {fileID: 1014066046}
   UI: {fileID: 811189295}
   prefab: {fileID: 4996051133577212, guid: 3839f90e2cfb546129b6567bc6ec1abb, type: 2}
+  prefab2: {fileID: 4663729089625136, guid: da4f126c067bd4bb797766306d14a2a3, type: 2}
 --- !u!1 &275183075
 GameObject:
   m_ObjectHideFlags: 0
