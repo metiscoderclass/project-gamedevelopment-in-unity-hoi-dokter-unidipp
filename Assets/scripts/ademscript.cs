@@ -15,6 +15,8 @@ public class ademscript : MonoBehaviour {
 	public Text ademgetaltext;
 	public Text nietademgetaltext;
 
+	public GameObject UI;
+
 	public Transform prefab;
 
 	Animator animator;
@@ -41,7 +43,8 @@ public class ademscript : MonoBehaviour {
 
 		if (GameObject.Find ("message_rood(Clone)") == null) {
 			if (nietgeademgetal < 0 && tijdsindseersteadem > 1) {
-				Instantiate (prefab, new Vector3 (0, 3, 0), Quaternion.identity);
+				Transform nietgeademdmessage = Instantiate (prefab, new Vector3 (0, 3, 0), Quaternion.identity);
+				nietgeademdmessage.transform.parent = UI.transform;
 			}
 		}
 
