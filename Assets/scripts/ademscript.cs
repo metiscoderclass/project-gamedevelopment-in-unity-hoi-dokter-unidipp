@@ -121,12 +121,6 @@ public class ademscript : MonoBehaviour {
 		nietademgetaltext.text = nietgeademgetal.ToString();
 	}
 
-
-
-	//public void ademinstate(bool adembool2) {
-	//	ademinbool_player = adembool2;		
-	//}
-
 	public void reloadscene () {
 		Debug.Log ("reloading scene...");
 		SceneManager.LoadScene("scenes/prikjegame");
