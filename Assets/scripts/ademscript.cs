@@ -27,44 +27,54 @@ public class ademscript : MonoBehaviour {
 
 	Animator animator;
 
-	//public Animation ademinanim;
-	//public Animation ademuitanim;
 
-	// Use this for initialization
+
+
+
 	void Start () {
 
 		animator = GetComponent<Animator>();
 
 		Button btn = reload.GetComponent<Button>();
 		btn.onClick.AddListener(reloadscene);
-
-		// animation = GetComponent<Animation> ();
-		
+	
 	}
 	
 	// Update is called once per frame
 	void Update () {
+
+
 		if (eersteadem == true) {
+			
 			tijdsindseersteadem++;
+
 		}
 
 
+		//even niet geademd message (bij nietademgetal < 0)
 		if (GameObject.Find ("message_rood(Clone)") == null && nietgeademgetal < 0 && tijdsindseersteadem > 1 && afgegaan == false) {
-				Transform nietgeademdmessage = Instantiate (prefab, new Vector3 (0, 3, 0), Quaternion.identity);
-				nietgeademdmessage.transform.parent = UI.transform;
+				
+			Transform nietgeademdmessage = Instantiate (prefab, new Vector3 (0, 3, 0), Quaternion.identity);
+			nietgeademdmessage.transform.parent = UI.transform;
+		
 		}
 
-		if (GameObject.Find ("afmessage(Clone)") == null) {
-			if (nietgeademgetal == -300 && tijdsindseersteadem > 1) {
-				afgegaan = true;
 
-				Destroy (GameObject.FindGameObjectWithTag("message"));
-				Transform afgeademdmessage = Instantiate (prefab2, new Vector3 (0, 3, 0), Quaternion.identity);
-				afgeademdmessage.transform.parent = UI.transform;
-			}
+		//lang niet geademd en af message (bij nietademgetal = 300)
+		if (GameObject.Find ("afmessage(Clone)") == null && nietgeademgetal == -300 && tijdsindseersteadem > 1) {
+
+			afgegaan = true;
+
+			Destroy (GameObject.FindGameObjectWithTag("message"));
+			Transform afgeademdmessage = Instantiate (prefab2, new Vector3 (0, 3, 0), Quaternion.identity);
+			afgeademdmessage.transform.parent = UI.transform;
+		
 		}
 
-		if (afgegaan == false) {
+
+		if (afgegaan == false) { // alleen als je nog leeft kan je ademen
+
+			//inademen bool zetten en animatie starten en stoppen
 			if (Input.GetKey (KeyCode.A)) {
 				ademinbool_player = true;
 				animator.SetBool ("ademIn", true);
@@ -74,7 +84,7 @@ public class ademscript : MonoBehaviour {
 			}
 
 
-
+			//uitademen bool zetten en animatie starten en stoppen
 			if (Input.GetKey (KeyCode.D)) {
 				ademuitbool_player = true;
 				animator.SetBool ("ademUit", true);
@@ -85,13 +95,13 @@ public class ademscript : MonoBehaviour {
 
 
 
-			if (ademinbool_player == true) {
+			if (ademinbool_player == true) { // als er word ingeademd
 				
-				if (eersteadem == false) {
-					eersteadem = true;
+				if (eersteadem == false) { // als er nog niet geademd is dan word eersteadem true
+					eersteadem = true; 
 				}
 
-				Destroy (GameObject.FindGameObjectWithTag ("message"));
+				Destroy (GameObject.FindGameObjectWithTag ("message")); // even niet geademd message word weggehaald
 
 
 				ademgetal += 1; 

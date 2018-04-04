@@ -263,7 +263,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 114412271021468508, guid: 0af6fef23154b4e17896e0780b71db58,
+          type: 2}
         m_MethodName: reloadscene
         m_Mode: 1
         m_Arguments:
