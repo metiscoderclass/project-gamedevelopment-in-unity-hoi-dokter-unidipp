@@ -21,6 +21,10 @@ public class ademscript : MonoBehaviour {
 	public Transform prefab;
 	public Transform prefab2;
 
+	public Button reload;
+
+	bool afgegaan;
+
 	Animator animator;
 
 	//public Animation ademinanim;
@@ -31,6 +35,8 @@ public class ademscript : MonoBehaviour {
 
 		animator = GetComponent<Animator>();
 
+		Button btn = reload.GetComponent<Button>();
+		btn.onClick.AddListener(reloadscene);
 
 		// animation = GetComponent<Animation> ();
 		
@@ -43,59 +49,60 @@ public class ademscript : MonoBehaviour {
 		}
 
 
-		if (GameObject.Find ("message_rood(Clone)") == null) {
-			if (nietgeademgetal < 0 && tijdsindseersteadem > 1) {
+		if (GameObject.Find ("message_rood(Clone)") == null && nietgeademgetal < 0 && tijdsindseersteadem > 1 && afgegaan == false) {
 				Transform nietgeademdmessage = Instantiate (prefab, new Vector3 (0, 3, 0), Quaternion.identity);
 				nietgeademdmessage.transform.parent = UI.transform;
-			}
 		}
 
 		if (GameObject.Find ("afmessage(Clone)") == null) {
 			if (nietgeademgetal == -300 && tijdsindseersteadem > 1) {
+				afgegaan = true;
+
 				Destroy (GameObject.FindGameObjectWithTag("message"));
 				Transform afgeademdmessage = Instantiate (prefab2, new Vector3 (0, 3, 0), Quaternion.identity);
 				afgeademdmessage.transform.parent = UI.transform;
 			}
 		}
 
-
-		if (Input.GetKey (KeyCode.A)) {
-			ademinbool_player = true;
-			animator.SetBool("ademIn", true);
-		} else {
-			ademinbool_player = false;
-			animator.SetBool("ademIn", false);
-		}
-
-
-
-		if (Input.GetKey (KeyCode.D)) {
-			ademuitbool_player = true;
-			animator.SetBool("ademUit", true);
-		} else {
-			ademuitbool_player = false;
-			animator.SetBool("ademUit", false);
-		}
-
-
-
-		if (ademinbool_player == true) {
-			
-			if (eersteadem == false) {
-				eersteadem = true;
+		if (afgegaan == false) {
+			if (Input.GetKey (KeyCode.A)) {
+				ademinbool_player = true;
+				animator.SetBool ("ademIn", true);
+			} else {
+				ademinbool_player = false;
+				animator.SetBool ("ademIn", false);
 			}
 
-			Destroy (GameObject.FindGameObjectWithTag("message"));
 
 
-			ademgetal += 1; 
-			nietgeademgetal = 100;
-		} else if (ademuitbool_player == true) {
+			if (Input.GetKey (KeyCode.D)) {
+				ademuitbool_player = true;
+				animator.SetBool ("ademUit", true);
+			} else {
+				ademuitbool_player = false;
+				animator.SetBool ("ademUit", false);
+			}
 
-			ademgetal -= 1; 
-			nietgeademgetal = 100;
-		} else {
-			nietgeademgetal -= 1;
+
+
+			if (ademinbool_player == true) {
+				
+				if (eersteadem == false) {
+					eersteadem = true;
+				}
+
+				Destroy (GameObject.FindGameObjectWithTag ("message"));
+
+
+				ademgetal += 1; 
+				nietgeademgetal = 100;
+			} else if (ademuitbool_player == true) {
+
+				ademgetal -= 1; 
+				nietgeademgetal = 100;
+			} else {
+				nietgeademgetal -= 1;
+			}
 		}
 
 
@@ -111,6 +118,8 @@ public class ademscript : MonoBehaviour {
 	//}
 
 	public void reloadscene () {
+		Debug.Log ("reloading scene...");
 		SceneManager.LoadScene("scenes/prikjegame");
+		Debug.Log ("scene reloaded");
 	}
 }
