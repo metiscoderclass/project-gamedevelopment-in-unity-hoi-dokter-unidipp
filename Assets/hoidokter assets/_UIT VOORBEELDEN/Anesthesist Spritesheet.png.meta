@@ -135,13 +135,13 @@ TextureImporter:
       name: lichaam
       rect:
         serializedVersion: 2
-        x: 302
+        x: 328
         y: 286
-        width: 649
+        width: 622
         height: 938
       alignment: 9
       pivot: {x: 0.549452, y: 0.4850305}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 34, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
