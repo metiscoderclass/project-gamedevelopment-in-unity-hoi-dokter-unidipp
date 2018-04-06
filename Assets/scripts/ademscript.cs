@@ -20,6 +20,7 @@ public class ademscript : MonoBehaviour {
 
 	public Transform prefab;
 	public Transform prefab2;
+	public Transform blijfademenprefab;
 
 	public Button reload;
 
@@ -27,11 +28,19 @@ public class ademscript : MonoBehaviour {
 
 	Animator animator;
 
+	public GameObject anesthesist;
+
+	Animator anesthesistanimator;
+
+
+
 
 
 
 
 	void Start () {
+
+		anesthesistanimator = anesthesist.GetComponent<Animator> ();
 
 		animator = GetComponent<Animator>();
 
@@ -114,6 +123,23 @@ public class ademscript : MonoBehaviour {
 				nietgeademgetal -= 1;
 			}
 		}
+
+
+
+		if (tijdsindseersteadem == 1000) {
+			anesthesistanimator.SetTrigger ("naar_binnen");
+
+
+			Transform blijfademenmessage = Instantiate (blijfademenprefab, new Vector3 (0, 3, 0), Quaternion.identity);
+			blijfademenmessage.transform.parent = UI.transform;
+
+		}
+
+		if (tijdsindseersteadem == 1150) {
+			//geef prikje
+		}
+
+
 
 
 
