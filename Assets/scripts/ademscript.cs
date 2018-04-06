@@ -27,8 +27,6 @@ public class ademscript : MonoBehaviour {
 
 	Animator animator;
 
-	public Animator anesthesist_animator;
-
 
 
 
