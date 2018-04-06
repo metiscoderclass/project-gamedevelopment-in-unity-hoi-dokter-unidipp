@@ -13,7 +13,7 @@ public class zoom : MonoBehaviour {
 	
 	void Update () {
         Debug.Log(num);
-        m_OrthographicCamera.orthographicSize = num;
+        //m_OrthographicCamera.orthographicSize = num;
         if(increase && num < max)
             num += meer;
         if (Input.GetButtonDown("Horizontal"))

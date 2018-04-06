@@ -9,7 +9,6 @@ public class Doctorvolger : MonoBehaviour
     public float Speed;
     public float Triggerzone;
     public float Stopzone;
-    //float jumpSpeed = 700.0f;
     private Transform target;
 
     void Start()

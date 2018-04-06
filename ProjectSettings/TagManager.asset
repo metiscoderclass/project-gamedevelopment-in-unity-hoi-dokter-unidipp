@@ -47,12 +47,15 @@ TagManager:
   - name: Foreground
     uniqueID: 3517099287
     locked: 0
+  - name: deur
+    uniqueID: 1562061043
+    locked: 0
   - name: Props
     uniqueID: 3236865947
     locked: 0
   - name: Character
     uniqueID: 1755093741
     locked: 0
-  - name: deur
-    uniqueID: 1562061043
+  - name: gui
+    uniqueID: 3474395229
     locked: 0
