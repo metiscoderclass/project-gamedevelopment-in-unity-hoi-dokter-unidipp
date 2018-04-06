@@ -6,16 +6,20 @@ using UnityEngine;
 
 public class Deur : MonoBehaviour {
 
-    public Button Btndeur;
+    public SpriteRenderer deur;
+    public Sprite deurB;
 
     void Start()
     {
-        Button btn = Btndeur.GetComponent<Button>();
-        btn.onClick.AddListener(TaskOnClick);
+        deur = gameObject.GetComponent<SpriteRenderer>();
     }
 
-    void TaskOnClick()
+    void OnMouseDown()
     {
-        Debug.Log("deur open!");
+        Debug.Log("deur geklikt");
+        deur.sprite = deurB;
+        Application.LoadLevel("prikjegame");
     }
+
+
 }

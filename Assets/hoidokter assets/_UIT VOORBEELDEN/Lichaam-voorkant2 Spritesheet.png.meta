@@ -1,9 +1,23 @@
 fileFormatVersion: 2
 guid: 773d5ab00a09a0d49b64e7663d8ffc37
-timeCreated: 1521372911
+timeCreated: 1522138016
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: Lichaam-voorkant2 Spritesheet_0
+    21300002: Lichaam-voorkant2 Spritesheet_1
+    21300004: Lichaam-voorkant2 Spritesheet_2
+    21300006: Lichaam-voorkant2 Spritesheet_3
+    21300008: Lichaam-voorkant2 Spritesheet_4
+    21300010: Lichaam-voorkant2 Spritesheet_5
+    21300012: Lichaam-voorkant2 Spritesheet_6
+    21300014: Lichaam-voorkant2 Spritesheet_7
+    21300016: Lichaam-voorkant2 Spritesheet_8
+    21300018: Lichaam-voorkant2 Spritesheet_9
+    21300020: Lichaam-voorkant2 Spritesheet_10
+    21300022: Lichaam-voorkant2 Spritesheet_11
+    21300024: Lichaam-voorkant2 Spritesheet_12
+    21300026: Lichaam-voorkant2 Spritesheet_13
   externalObjects: {}
   serializedVersion: 4
   mipmaps:
@@ -40,7 +54,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -66,9 +80,215 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Lichaam-voorkant2 Spritesheet_0
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 468
+        width: 154
+        height: 145
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Lichaam-voorkant2 Spritesheet_1
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 466
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Lichaam-voorkant2 Spritesheet_2
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 466
+        width: 7
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Lichaam-voorkant2 Spritesheet_3
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 468
+        width: 154
+        height: 145
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Lichaam-voorkant2 Spritesheet_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 239
+        width: 37
+        height: 176
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Lichaam-voorkant2 Spritesheet_5
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 244
+        width: 56
+        height: 168
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Lichaam-voorkant2 Spritesheet_6
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 221
+        width: 139
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Lichaam-voorkant2 Spritesheet_7
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 241
+        width: 63
+        height: 172
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Lichaam-voorkant2 Spritesheet_8
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 239
+        width: 37
+        height: 176
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Lichaam-voorkant2 Spritesheet_9
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 221
+        width: 139
+        height: 238
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Lichaam-voorkant2 Spritesheet_10
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 139
+        width: 69
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Lichaam-voorkant2 Spritesheet_11
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 139
+        width: 68
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Lichaam-voorkant2 Spritesheet_12
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 0
+        width: 65
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Lichaam-voorkant2 Spritesheet_13
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 0
+        width: 63
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
     outline: []
     physicsShape: []
   spritePackingTag: 

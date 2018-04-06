@@ -5,6 +5,7 @@ using UnityEngine;
 public class pl_cam_move : MonoBehaviour
 {
     //Animator anim;
+    public Camera m_OrthographicCamera;
     public AudioSource jumpsound;
     public float moveSpeed = 5.0f;
     bool facingRight = true;
@@ -12,15 +13,16 @@ public class pl_cam_move : MonoBehaviour
     public float smoothTimeX = 0.2f;
     GameObject Camera;
     Rigidbody2D rigid;
-    Vector2 cameraVelocity; 
+    Vector2 cameraVelocity;
 
-    public float jumpSpeed = 2300.0f;
+    public float jumpSpeed;
 
     void Start()
     {
         //anim = GetComponent<Animator>();
         rigid = GetComponent<Rigidbody2D>();
         Camera = GameObject.FindGameObjectWithTag("MainCamera");
+        m_OrthographicCamera.orthographicSize = 3.7f;
     }
 
     void Update()
@@ -40,6 +42,7 @@ public class pl_cam_move : MonoBehaviour
         if (rigid.velocity.y == 0)
             if (Input.GetButtonDown("Vertical"))
             {
+                //m_OrthographicCamera.orthographicSize += 1.0f;
                 rigid.AddForce(Vector3.up * jumpSpeed);
                 //GetComponent<Animator>().SetTrigger("jump");
                 jumpsound.Play();
