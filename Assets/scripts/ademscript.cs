@@ -163,4 +163,9 @@ public class ademscript : MonoBehaviour {
 		SceneManager.LoadScene("scenes/prikjegame");
 		Debug.Log ("scene reloaded");
 	}
+
+	public void gotomenu () {
+		Debug.Log ("loading menu scene...");
+		SceneManager.LoadScene("scenes/lobbygame");
+	}
 }
