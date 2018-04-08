@@ -21,6 +21,7 @@ public class ademscript : MonoBehaviour {
 	public Transform prefab;
 	public Transform prefab2;
 	public Transform blijfademenprefab;
+	public Transform levelvoltooidprefab;
 
 	public Button reload;
 
@@ -135,10 +136,20 @@ public class ademscript : MonoBehaviour {
 
 		}
 
-		if (tijdsindseersteadem == 1150) {
-			//geef prikje
+		if (tijdsindseersteadem == 1100) {
+			anesthesistanimator.SetTrigger ("naarjongen");
 		}
 
+		if (tijdsindseersteadem == 1280) {
+			Destroy (GameObject.FindGameObjectWithTag ("message2"));
+
+			afgegaan = true;
+
+			Transform levelvoltooidmessage = Instantiate (levelvoltooidprefab, new Vector3 (0, 3, 0), Quaternion.identity);
+			levelvoltooidmessage.transform.parent = UI.transform;
+
+			animator.enabled = false;
+		}
 
 
 
