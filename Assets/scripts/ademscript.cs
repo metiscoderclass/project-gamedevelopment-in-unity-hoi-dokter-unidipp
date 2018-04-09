@@ -54,7 +54,7 @@ public class ademscript : MonoBehaviour {
 	void Update () {
 
 
-		if (eersteadem == true) {
+		if (eersteadem == true && afgegaan == false) {
 			
 			tijdsindseersteadem++;
 
