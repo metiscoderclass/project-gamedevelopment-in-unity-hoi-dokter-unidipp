@@ -7,8 +7,11 @@ public class buttonin : MonoBehaviour {
 
 	public Camera m_OrthographicCamera;
 
-    void OnMouseDown() {
+    void OnMouseDrag() {
         Debug.Log("in");
-        m_OrthographicCamera.orthographicSize = 3;
+        if (m_OrthographicCamera.orthographicSize > 3)
+        {
+            m_OrthographicCamera.orthographicSize -= 0.1f;
+        }
     }
 }
