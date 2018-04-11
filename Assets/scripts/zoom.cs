@@ -6,7 +6,7 @@ public class zoom : MonoBehaviour {
     public Camera m_OrthographicCamera;
 
     float max = 4.6f;
-    float num = 3.5f;
+    float num = 5f;
     float meer = 0.1f;
     string label;
     bool increase = false;

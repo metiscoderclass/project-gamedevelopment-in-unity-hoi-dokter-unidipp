@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 using UnityEngine;
 
@@ -20,7 +21,7 @@ public class Deur : MonoBehaviour {
     {
         Debug.Log("deur geklikt");
         deur.sprite = deurB;
-        Application.LoadLevel("prikjegame");
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 
     void OnMouseOver()
