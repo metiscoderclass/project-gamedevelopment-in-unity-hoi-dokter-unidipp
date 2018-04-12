@@ -3,9 +3,7 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags:
-  - message
-  - message2
+  tags: []
   layers:
   - Default
   - TransparentFX
@@ -43,18 +41,15 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: Background
-    uniqueID: 2256149359
+  - name: door
+    uniqueID: 2021637533
     locked: 0
   - name: Props
-    uniqueID: 2014028351
+    uniqueID: 3763293147
     locked: 0
-  - name: character
-    uniqueID: 1755707319
+  - name: Character
+    uniqueID: 388165801
     locked: 0
-  - name: UI
-    uniqueID: 1417146375
-    locked: 0
-  - name: UI2
-    uniqueID: 1506551247
+  - name: gui
+    uniqueID: 1620774299
     locked: 0

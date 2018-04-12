@@ -1,7 +1,13 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: f0d2e1af9b31f4caaaf790355a8d6eb1
 folderAsset: yes
 timeCreated: 1523346697
+=======
+guid: 0f86c0bfec80cac42a0ab0011b72c6bc
+folderAsset: yes
+timeCreated: 1523261559
+>>>>>>> Jurre
 licenseType: Free
 DefaultImporter:
   externalObjects: {}

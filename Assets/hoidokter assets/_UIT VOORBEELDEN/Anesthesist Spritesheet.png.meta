@@ -1,17 +1,17 @@
 fileFormatVersion: 2
 guid: 8b6c8adb7d65a4aeba77a60a33fe6a13
-timeCreated: 1522838554
+timeCreated: 1523519884
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: mond
-    21300002: lichaam
-    21300004: linker_arm2
-    21300006: linker_arm1
-    21300008: rechter_arm1
-    21300010: rechter_arm2
-    21300012: linker_been
-    21300014: rechter_been
+    21300000: Anesthesist Spritesheet_0
+    21300002: Anesthesist Spritesheet_1
+    21300004: Anesthesist Spritesheet_2
+    21300006: Anesthesist Spritesheet_3
+    21300008: Anesthesist Spritesheet_4
+    21300010: Anesthesist Spritesheet_5
+    21300012: Anesthesist Spritesheet_6
+    21300014: Anesthesist Spritesheet_7
   externalObjects: {}
   serializedVersion: 4
   mipmaps:
@@ -39,18 +39,18 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: -1
     aniso: -1
     mipBias: -1
     wrapU: 1
     wrapV: 1
-    wrapW: 1
+    wrapW: -1
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
   spriteMode: 2
   spriteExtrude: 1
-  spriteMeshType: 0
+  spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
@@ -84,26 +84,6 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
-  - buildTarget: iPhone
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-  - buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
   - buildTarget: WebGL
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -118,7 +98,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: mond
+      name: Anesthesist Spritesheet_0
       rect:
         serializedVersion: 2
         x: 197
@@ -126,97 +106,97 @@ TextureImporter:
         width: 126
         height: 42
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: lichaam
+      name: Anesthesist Spritesheet_1
       rect:
         serializedVersion: 2
-        x: 328
+        x: 354
         y: 286
-        width: 622
+        width: 626
         height: 938
-      alignment: 9
-      pivot: {x: 0.549452, y: 0.4850305}
-      border: {x: 34, y: 0, z: 0, w: 0}
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: linker_arm2
+      name: Anesthesist Spritesheet_2
       rect:
         serializedVersion: 2
         x: 0
         y: 372
         width: 89
         height: 276
-      alignment: 9
-      pivot: {x: 0.6352292, y: 0.9651359}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: linker_arm1
+      name: Anesthesist Spritesheet_3
       rect:
         serializedVersion: 2
         x: 162
         y: 372
         width: 161
         height: 257
-      alignment: 9
-      pivot: {x: 0.87377, y: 0.9526932}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: rechter_arm1
+      name: Anesthesist Spritesheet_4
       rect:
         serializedVersion: 2
         x: 987
         y: 377
         width: 161
         height: 257
-      alignment: 9
-      pivot: {x: 0.07639365, y: 0.90586287}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: rechter_arm2
+      name: Anesthesist Spritesheet_5
       rect:
         serializedVersion: 2
         x: 1218
         y: 372
         width: 89
         height: 276
-      alignment: 9
-      pivot: {x: 0.3196953, y: 0.97967154}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: linker_been
+      name: Anesthesist Spritesheet_6
       rect:
         serializedVersion: 2
         x: 503
         y: 0
-        width: 63
+        width: 183
         height: 253
-      alignment: 9
-      pivot: {x: 0.5, y: 0.9360649}
-      border: {x: 0, y: 0, z: 63, w: 0}
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: rechter_been
+      name: Anesthesist Spritesheet_7
       rect:
         serializedVersion: 2
         x: 764
@@ -224,7 +204,7 @@ TextureImporter:
         width: 48
         height: 242
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
