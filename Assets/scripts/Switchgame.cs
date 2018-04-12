@@ -5,9 +5,10 @@ using UnityEngine.SceneManagement;
 
 public class Switchgame : MonoBehaviour {
 
+    public AudioSource click;
     public void Playbutton()
     {
-        Debug.Log("SWITCH SCENE");
+        click.Play();
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 }

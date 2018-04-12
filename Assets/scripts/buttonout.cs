@@ -11,6 +11,9 @@ public class buttonout : MonoBehaviour
     void OnMouseDrag()
     {
         Debug.Log("out");
-        m_OrthographicCamera.orthographicSize += 0.1f;
+        if (m_OrthographicCamera.orthographicSize < 10)
+        {
+            m_OrthographicCamera.orthographicSize += 0.1f;
+        }
     }
 }

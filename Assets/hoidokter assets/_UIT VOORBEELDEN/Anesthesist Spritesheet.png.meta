@@ -1,9 +1,17 @@
 fileFormatVersion: 2
 guid: dab44f6e0fd82ad43801df8616c966b7
-timeCreated: 1521372912
+timeCreated: 1523479976
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: Anesthesist Spritesheet_0
+    21300002: Anesthesist Spritesheet_1
+    21300004: Anesthesist Spritesheet_2
+    21300006: Anesthesist Spritesheet_3
+    21300008: Anesthesist Spritesheet_4
+    21300010: Anesthesist Spritesheet_5
+    21300012: Anesthesist Spritesheet_6
+    21300014: Anesthesist Spritesheet_7
   externalObjects: {}
   serializedVersion: 4
   mipmaps:
@@ -40,7 +48,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -66,9 +74,141 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Anesthesist Spritesheet_0
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 700
+        width: 126
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Anesthesist Spritesheet_1
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 286
+        width: 622
+        height: 938
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Anesthesist Spritesheet_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 372
+        width: 89
+        height: 276
+      alignment: 9
+      pivot: {x: 0.7841946, y: 0.9370628}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Anesthesist Spritesheet_3
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 372
+        width: 161
+        height: 257
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Anesthesist Spritesheet_4
+      rect:
+        serializedVersion: 2
+        x: 987
+        y: 377
+        width: 161
+        height: 257
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Anesthesist Spritesheet_5
+      rect:
+        serializedVersion: 2
+        x: 1218
+        y: 372
+        width: 89
+        height: 276
+      alignment: 9
+      pivot: {x: 0.23766679, y: 0.93706304}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Anesthesist Spritesheet_6
+      rect:
+        serializedVersion: 2
+        x: 503
+        y: 0
+        width: 183
+        height: 253
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Anesthesist Spritesheet_7
+      rect:
+        serializedVersion: 2
+        x: 764
+        y: 0
+        width: 48
+        height: 242
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
     outline: []
     physicsShape: []
   spritePackingTag: 
